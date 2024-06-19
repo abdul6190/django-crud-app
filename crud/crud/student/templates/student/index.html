@@ -34,7 +34,7 @@
         <tbody class="table-dark table-striped-columns">
           {% for student  in all_students %}
             <tr>
-              <th scope="row">{{ student.id }}</th>
+              <th scope="row">{{ forloop.counter }}</th>
               <td>{{ student.first_name }}</td>
               <td>{{ student.last_name }}</td>
               <td>{{ student.contact }}</td>
